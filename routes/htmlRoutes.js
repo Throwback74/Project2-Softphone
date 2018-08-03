@@ -13,7 +13,7 @@ module.exports = function(app) {
   app.get("/signup", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/RepoStuff/loggedIn.html");
+      res.redirect("/loggedIn.html");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
@@ -21,7 +21,7 @@ module.exports = function(app) {
   app.get("/login", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/RepoStuff/loggedIn.html");
+      res.redirect("/loggedIn.html");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
@@ -30,7 +30,7 @@ module.exports = function(app) {
     // If the user already has an account send them to the members page
     console.log(req.user);
     if (req.user) {
-      res.redirect("/RepoStuff/create_contact.html");
+      res.redirect("/create_contact.html");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
@@ -39,7 +39,7 @@ module.exports = function(app) {
     // If the user already has an account send them to the members page
     console.log(req.user);
     if (req.user) {
-      res.redirect("/RepoStuff/loggedIn.html");
+      res.redirect("/loggedIn.html");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
@@ -49,7 +49,7 @@ module.exports = function(app) {
     // If the user already has an account send them to the members page
     console.log(req.user);
     if (req.user) {
-      res.redirect("/RepoStuff/contact_list.html");
+      res.redirect("/contact_list.html");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
